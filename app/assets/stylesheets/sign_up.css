@@ -160,3 +160,12 @@ li.footer:hover, li.login:hover {
 	text-decoration: underline;
 	cursor: pointer;
 }
+
+.alert-error {
+	background-color: #fcc;
+	border: 1px solid red;
+	width: 66%;
+	margin: auto;
+	padding: 10px;
+	text-align: center;
+}
