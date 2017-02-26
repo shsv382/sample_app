@@ -114,6 +114,28 @@ label#check {
 	border: none;
 }
 
+.button-sign-up {
+	display: inline-block;
+	background-color: #333;
+}
+
+.button, .button-sign-up {
+	transition-duration: 0.125s;
+	transition-property: background-color;
+	transition-timing-function: linear;
+}
+
+.button:hover, .button-sign-up:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #999;
+}
+
+.center {
+	width: 100%;
+	margin: auto;
+}
+
 ul#foot, li.footer {
 	display: inline-block;
 	padding: 0 10px;
