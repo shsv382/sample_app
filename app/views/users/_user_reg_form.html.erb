@@ -7,5 +7,9 @@
 	<%= f.password_field :password, class: "text" %>
 	<%= f.label "Confirm password" %>
 	<%= f.password_field :password_confirmation, class: "text" %>
-	<%= f.submit "SIGN UP", class: "button" %>
+	<% if signed_in? %>		
+		<%= f.submit "SAVE", class: "button" %>
+	<% else %>
+		<%= f.submit "SIGN UP", class: "button" %>
+	<% end %>
 <% end %>

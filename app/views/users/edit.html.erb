@@ -1,0 +1,8 @@
+<% provide(:title, "Edit user") %>
+
+<section class="sign_up">
+<h1>Update your profile</h1>
+<%= render 'user_reg_form' %>
+<%= gravatar_for @user %>
+<%= link_to "change", "http://gravatar.com/emails" %>
+</section>
