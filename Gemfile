@@ -68,3 +68,6 @@ end
 
 # Gravatar
 gem 'gravatar'
+
+# Fake users creater
+gem 'faker'
