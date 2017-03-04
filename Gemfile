@@ -71,3 +71,7 @@ gem 'gravatar'
 
 # Fake users creater
 gem 'faker'
+
+# Pagination
+gem 'will_paginate'
+gem 'bootstrap-will_paginate'
