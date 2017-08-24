@@ -35,11 +35,5 @@
 		}
 	}
 
-	var show_menu = document.getElementById("show_menu");
-	var main_menu = document.getElementById("main_menu");
-
-	show_menu.onclick = function(e) {
-		main_menu.classList.toggle("visible");
-	};
-
+	
 
