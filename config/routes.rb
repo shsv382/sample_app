@@ -1,7 +1,12 @@
 Rails.application.routes.draw do
 
+  get 'microposts/create'
+
+  get 'microposts/destroy'
+
   resources :sessions, only: [:new, :create, :destroy]
   resources :users
+  resources :microposts, only: [:create, :destroy]
 
   match '/signup',  to: 'users#new',            via: 'get'
   match '/signin',  to: 'sessions#new',         via: 'get'

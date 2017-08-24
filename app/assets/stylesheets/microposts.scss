@@ -1,0 +1,39 @@
+// Place all the styles related to the Microposts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.microposts {
+	list-style-type: none;
+}
+
+.micropost {
+	border: 1px solid black;
+	padding: 8px;
+	padding-bottom: 12px;
+	margin: 10px auto;
+	min-height: 60px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	background: linear-gradient(to bottom right, #cfc, #274);
+	overflow: hidden;
+}
+
+.timestamp {
+	color: #eee;
+	float: right;
+}
+
+.content {
+	display: block;
+	max-width: 60%;
+}
+
+.micropost_delete {
+	display: block;
+	text-align: right;
+	color: #dff;
+	&:hover {
+		color: #bee;
+		text-decoration: none;
+	}
+}

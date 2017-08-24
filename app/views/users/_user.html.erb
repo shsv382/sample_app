@@ -1,5 +1,8 @@
 <li>
 	<%= gravatar_for(user) %>
 	<%= link_to user.name, user %>
-	<%= link_to "Удалить пользователя", user, method: :delete %>
+	(<%= user.microposts.count %>)
+	<% if current_user.admin? || current_user == user %>
+		<%= link_to "Удалить пользователя", user, method: :delete, class: "delete_user" %>
+	<% end %>
 </li>

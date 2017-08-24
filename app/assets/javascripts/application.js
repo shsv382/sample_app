@@ -15,3 +15,24 @@
 //= require bootstrap
 //= require turbolinks
 //= require_tree .
+
+$(document).ready(function () {
+	var sym = document.getElementsByClassName("sym")[0];
+	var textarea = document.getElementById("micropost_content");
+	function sym_full() {
+		sym.innerHTML = "Осталось " + (140 - textarea.value.length) + " символов";
+	}
+
+	sym_full();
+
+	textarea.onkeyup = function(e) {
+		sym_full();
+	}
+
+	textarea.onkeydown = function(e) {
+		if ((140 - textarea.value.length) <= 0 && e.keyCode != 8 && e.keyCode != 46) {
+			return false;
+		}
+	}
+	
+});
