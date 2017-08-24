@@ -3,7 +3,14 @@
         <div class="container">
           <%= link_to "Sample App", '#', id: "logo" %>
           <nav>
-            <ul class="nav navbar-nav pull-right">
+              <ul class="nav navbar-nav pull-right" id="show_menu">
+                <li> <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    Menu <b class="caret"></b>
+                  </a> </li> </ul>
+
+            <ul class="nav navbar-nav pull-right" id="main_menu">
+                
+
               <li><%= link_to "Home",   root_path %></li>
               <li><%= link_to "Help",   help_path %></li>
               <% if signed_in? %>

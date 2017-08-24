@@ -34,5 +34,16 @@ $(document).ready(function () {
 			return false;
 		}
 	}
-	
+
+	var show_menu = document.getElementById("show_menu");
+	var main_menu = document.getElementById("main_menu");
+
+	show_menu.onclick = function(e) {
+		if (main_menu.style.display) {
+			main_menu.style.display = "";
+		}
+		else {
+			main_menu.style.display = "block";
+		}
+	}
 });

@@ -222,3 +222,22 @@ aside {
     margin: 1px 1px;
   }
 }
+
+.stats_anchor {
+  display: inline-block;
+  width: 49%;
+}
+
+#show_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  #show_menu {
+    display: inline-block;
+  }
+
+  #main_menu {
+    display: none;
+  }
+}
