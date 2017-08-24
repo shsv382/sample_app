@@ -13,10 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require bootstrap
-//= require turbolinks
 //= require_tree .
 
-$(document).ready(function () {
+
+
 	var sym = document.getElementsByClassName("sym")[0];
 	var textarea = document.getElementById("micropost_content");
 	function sym_full() {
@@ -39,11 +39,7 @@ $(document).ready(function () {
 	var main_menu = document.getElementById("main_menu");
 
 	show_menu.onclick = function(e) {
-		if (main_menu.style.display) {
-			main_menu.style.display = "";
-		}
-		else {
-			main_menu.style.display = "block";
-		}
-	}
-});
+		main_menu.classList.toggle("visible");
+	};
+
+

@@ -229,7 +229,19 @@ aside {
 }
 
 #show_menu {
+  list-style-type: none;  
+  text-decoration: none;
+  cursor: pointer;
+  height: 100%;
+  color: #ddd;
+  float: right;
+  line-height: 100%;
+  padding: 17px;
   display: none;
+  &:hover {
+    text-decoration: none;
+    color: $blue;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -240,6 +252,9 @@ aside {
   #main_menu {
     width: 100%;
     text-align: center;
+  }
+
+  .visible {
     display: none;
   }
 }
